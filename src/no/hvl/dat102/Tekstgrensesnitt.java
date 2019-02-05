@@ -61,15 +61,15 @@ public class Tekstgrensesnitt {
 
 	// Skrive ut en enkel statistikk som inneholder antall CD-er totalt
 	// og hvor mange det er i hver sjanger
-	public void skrivUtStatistikk(CDarkivADT cda) {
-		int antall = cda.getAntall();
-		String statistikk = "";
-
-		for (int i = 0; i < antall; i++) {
-			statistikk += cda.visCD(cd);
-
-		}
-
-	}
+//	public void skrivUtStatistikk(CDarkivADT cda) {
+//		int antall = cda.getAntall();
+//		String statistikk = "";
+//
+//		for (int i = 0; i < antall; i++) {
+//			statistikk += cda.visCD(cd);
+//
+//		}
+//
+//	}
 
 }

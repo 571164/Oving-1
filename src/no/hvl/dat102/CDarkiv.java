@@ -4,7 +4,6 @@ import no.hvl.dat102.adt.CDarkivADT;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 
-
 public class CDarkiv implements CDarkivADT {
 
 	private CD[] cdTabell;
@@ -103,7 +102,12 @@ public class CDarkiv implements CDarkivADT {
 				i++;
 			}
 		}
-		return cdTabell[i];
+		if (funnet) {
+			return cdTabell[i];
+		} else {
+			return null;
+		}
+		
 	}
 
 	public int finnes(int cdNummer) {
@@ -123,11 +127,4 @@ public class CDarkiv implements CDarkivADT {
 			return -1;
 		}
 	}
-
-	public void visCD(CD cd) {
-		showMessageDialog(null,
-				"Nr. " + cd.getCdNummer() + "\nArtist: " + cd.getArtist() + "\nTittel: " + cd.getTittel() + "\nÅr: "
-						+ cd.getÅr() + "\nSjanger: " + cd.getSjanger() + "\nPlateselskap: " + cd.getPlateselskap());
-	}
-
 }

@@ -66,7 +66,6 @@ public interface CDarkivADT {
 	 */
 	public CD finnCD(int cdNummer);
 
-	public void visCD(CD cd);
 
 	public int getAntall();
 

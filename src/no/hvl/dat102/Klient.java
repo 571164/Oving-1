@@ -1,18 +1,14 @@
 package no.hvl.dat102;
 
-import no.hvl.dat102.adt.CDarkivADT;
-import java.util.*;
-import static javax.swing.JOptionPane.*;
-import static java.lang.Integer.*;
-
-public class Klient {
+public class KLIENT {
 
 	public static void main(String[] args) {
 
-		CDarkivADT cda = new CDarkiv(10);
-		Meny meny = new Meny(cda);
-
-		meny.start();
+		CDarkiv samling = new CDarkiv(10);
+		
+		CD cd1 = new CD(1, "Bob", "Hallo", 1997, Sjanger.finnSjanger(1), "Ol AS");
+		samling.leggTilCd(cd1);
+		samling.visCD(cd1);
 
 	}
 

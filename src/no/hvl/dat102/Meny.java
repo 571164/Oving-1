@@ -11,6 +11,7 @@ public class Meny {
 	public Meny(CDarkivADT cda) {
 		tekstgr = new Tekstgrensesnitt();
 		this.cda = cda;
+//		cda = new CDarkiv(10);
 	}
 
 	public void start() {
@@ -27,6 +28,7 @@ public class Meny {
 			// LEGG TIL CD
 			case (1): {
 				cda.leggTilCd(tekstgr.lesCD());
+				tekstgr.visCD(cda.finnCD(1));
 				break;
 			}
 
@@ -53,6 +55,7 @@ public class Meny {
 				int cdNummer = parseInt(cdNummerTxt);
 				CD cd = cda.finnCD(cdNummer);
 				tekstgr.visCD(cd);
+				System.out.println(cd);
 				break;
 			}
 
@@ -70,11 +73,14 @@ public class Meny {
 				break;
 
 			}
+			case (0): {
+				kjør = false;
+			}
 
 			// SKRIV UT CD-er (ARTIST)
-			case (6): {
-				tekstgr.skrivUtStatistikk(cda);
-			}
+//			case (6): {
+//				tekstgr.skrivUtStatistikk(cda);
+//			}
 			}
 
 		}
