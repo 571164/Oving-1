@@ -1,11 +1,5 @@
 package no.hvl.dat102;
 
-
-import no.hvl.dat102.adt.CDarkivADT;
-import java.util.*;
-import static javax.swing.JOptionPane.*;
-import static java.lang.Integer.*;
-
 public class CDArkivKlient2 {
 
 	public static void main(String[] args) {
