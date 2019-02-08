@@ -1,5 +1,7 @@
 package no.hvl.dat102;
 
+import no.hvl.dat102.adt.*;
+
 public class CDArkivKlient2 {
 
 	public static void main(String[] args) {

@@ -60,13 +60,17 @@ public interface CDarkivADT {
 	public int finnes(int cdNummer);
 
 	/**
-	 * 
-	 * @param cdNummer
-	 * @return
+	 * finner en cd ved hjelp av cdNummer
+	 * @param cdNummer det skal søkes etter
+	 * @return cd-en som vart funnet
 	 */
 	public CD finnCD(int cdNummer);
 
 
+	/**
+	 *  returnerer antall elementer i samlingen
+	 * @return antall elementer
+	 */
 	public int getAntall();
 
 }
